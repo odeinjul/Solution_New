@@ -11,3 +11,4 @@ public:
         return x == Revertedx || x == Revertedx /10;
     }
 };
+//从后面生成回文数，到等长时比较
