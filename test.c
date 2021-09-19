@@ -1,5 +1,5 @@
 #include <stdio.h>
- int main(){
+int main(){
      printf("hello VSCode!\n");
      return 0;
  }
