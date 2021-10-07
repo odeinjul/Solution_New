@@ -17,6 +17,10 @@
         "cmath": "cpp",
         "ostream": "cpp",
         "cstring": "cpp",
-        "cstdio": "cpp"
+        "cstdio": "cpp",
+        "istream": "cpp",
+        "__locale": "cpp",
+        "__string": "cpp",
+        "string_view": "cpp"
     }
 }
