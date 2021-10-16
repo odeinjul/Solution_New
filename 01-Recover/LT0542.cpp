@@ -4,7 +4,29 @@ public:
         int dir[4][2]={{-1,0},{1,0},{0,1},{0,-1}};
         int m = mat.size(), n = mat[0].size();
         if(m == 0) return mat;
-        vector<vector <int>> dist(m, vector<int> (n , INT_MAX)); //init mat with INT_MAX
+        vector<vector <int>> dist(m, vector<int> (n , INT_MAX-3000)); //init mat with INT_MAX
+        for(int i = 0; i < m; i++){
+            for(int j = 0; j < n; j++){
+                if(mat[i][j] == 0){
+                    dist[i][j] = 0;
+                }
+                else{
+                    if(i > 0) 
+                        dist[i][j] = min(dist[i][j], dist[i-1][j]+1);
+                    if(j > 0)
+                        dist[i][j] = min(dist[i][j], dist[i][j-1]+1);
+                }
+            }
+        }
+        for(int i = m-1; i >= 0; i--){
+            for(int j = n-1; j >= 0; j--){
+                if(i < m-1) 
+                    dist[i][j] = min(dist[i][j], dist[i+1][j]+1);
+                if(j < n-1)
+                    dist[i][j] = min(dist[i][j], dist[i][j+1]+1);
+            }
+        }
+        /*
         queue<pair<int, int>> q;
         for(int i = 0; i < m; i++){
             for(int j = 0; j < n; j++){
@@ -27,7 +49,7 @@ public:
                     }
                 }
             }
-        }
+        }*/
         return dist;
     }
 };
