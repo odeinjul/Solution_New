@@ -4,7 +4,7 @@ public:
         int dir[4][2]={{-1,0},{1,0},{0,1},{0,-1}};
         int m = mat.size(), n = mat[0].size();
         if(m == 0) return mat;
-        vector<vector <int>> dist(m, vector<int> (n , INT_MAX-3000)); //init mat with INT_MAX
+        vector<vector <int>> dist(m, vector<int> (n , INT_MAX-3000)); //init dist with INT_MAX
         for(int i = 0; i < m; i++){
             for(int j = 0; j < n; j++){
                 if(mat[i][j] == 0){
