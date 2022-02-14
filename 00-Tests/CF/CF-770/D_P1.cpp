@@ -31,6 +31,24 @@ void work(int n){
     cout << "? " << 2 << ' ' << n-1 << ' ' << flag2 <<endl;
     cout.flush();
     cin >> c;
+    if(maxn == a){
+        cout<<"! "<<flag1<<' '<<n-1<<endl;
+    }
+    else if(maxn == b){
+        cout<<"! "<<flag1<<' '<<n-1<<endl;
+    }
+    else if(maxn == c){
+        cout<<"! "<<n-1<<' '<<flag2<<endl;
+    }
+    else if(a == b){
+        cout<<"! "<<flag2<<' '<<flag1<<endl;
+    }
+    else if(a == c){
+        cout<<"! "<<flag2<<' '<<flag1<<endl;
+    }
+    else if(c == b){
+        cout<<"! "<<flag2<<' '<<n-1<<endl;
+    }
     cout.flush();
 }
 
