@@ -94,3 +94,4 @@ void work(int n){
     return ;
 
 }
+
