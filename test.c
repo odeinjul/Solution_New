@@ -1,5 +1,8 @@
-#include <stdio.h>
-int main(){
-     printf("hello VSCode!\n");
-     return 0;
- }
+#include "stdio.h"
+
+int main()
+{
+	char *s; //malloc(sizeof(char) * 100);
+	scanf("%s",s);
+	printf("%s",s);
+}

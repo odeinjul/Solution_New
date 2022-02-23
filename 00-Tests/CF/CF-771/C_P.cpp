@@ -21,6 +21,7 @@ void solve(void){
         cin >> t;
         if(stk.empty()){
             stk.push(t); 
+            continue;
         }
         if(stk.top() < t){
             stk.push(t);  //t should be put into the top of the stack
