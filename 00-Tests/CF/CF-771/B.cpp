@@ -11,7 +11,6 @@ int main(){
         for(int i = 1; i <= n; i++){
             int64_t temp;
             cin >> temp;
-            //cout<<temp_even<<" "<<temp_odd<<" "<<temp<<endl;
             if(temp%2 == 0){
                 if(temp_even > temp){
                     flag = 1;
