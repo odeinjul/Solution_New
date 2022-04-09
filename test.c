@@ -1,8 +1,10 @@
-#include "stdio.h"
+#include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {
-	char *s; //malloc(sizeof(char) * 100);
-	scanf("%s",s);
+	char *s=(char *)malloc(sizeof(char) * 100);
+	s[1]='\0';
 	printf("%s",s);
 }
+
